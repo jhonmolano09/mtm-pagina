@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTM COMERCIO DIGITAL S A S - Soluciones Digitales</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Use Inter as the default font */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Simple animation for section loading */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800">MTM COMERCIO DIGITAL S A S</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-700 transition duration-300">Sobre Nosotros</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 transition duration-300">Contacto</a>
+                <a href="https://cuerpoymente.click/veri-product" target="_blank" class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition duration-300">Ver Producto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2">
+            <a href="#about" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Sobre Nosotros</a>
+            <a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+            <a href="https://cuerpoymente.click/veri-product" target="_blank" class="block px-6 py-2 text-blue-700 font-semibold hover:bg-gray-100">Ver Producto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="bg-blue-800 text-white text-center py-20 px-6 fade-in">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Impulsando el Futuro del Comercio Digital</h1>
+                <p class="text-lg md:text-xl text-blue-200 mb-8 max-w-3xl mx-auto">Especialistas en soluciones innovadoras que conectan su negocio con el mundo digital.</p>
+                <a href="#contact" class="bg-white text-blue-800 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300 text-lg">Contáctanos</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white fade-in">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre MTM COMERCIO DIGITAL S A S</h2>
+                <div class="max-w-4xl mx-auto border-t-4 border-blue-700 pt-6">
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Somos una empresa legalmente constituida en Colombia, dedicada a ofrecer soluciones de vanguardia en el ámbito del comercio digital. Nuestra misión es potenciar el crecimiento de nuestros clientes a través de estrategias y herramientas tecnológicas que optimizan su presencia en línea y maximizan sus resultados. Con un enfoque en la innovación y la calidad, nos establecemos como su socio estratégico ideal para navegar el dinámico mercado digital.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section id="contact" class="py-20 bg-gray-50 fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Información de Contacto</h2>
+                <div class="bg-white p-8 rounded-2xl shadow-lg max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Left Column: Details -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-blue-800 mb-6">Datos de la Empresa</h3>
+                        <div class="space-y-5">
+                            <div class="flex items-start">
+                                <i class="fas fa-building text-blue-600 mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Nombre Legal</h4>
+                                    <p class="text-gray-600">MTM COMERCIO DIGITAL S A S</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-id-card text-blue-600 mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Identificación Fiscal (NIT)</h4>
+                                    <p class="text-gray-600">901660840-1</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Dirección</h4>
+                                    <p class="text-gray-600">3907 TOLEDO T 2 107, CALLE 82<br>PEREIRA, Risaralda, Colombia</p>
+                                </div>
+                            </div>
+                             <div class="flex items-start">
+                                <i class="fas fa-phone text-blue-600 mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Teléfono</h4>
+                                    <p class="text-gray-600">+57 313 5008596</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-globe text-blue-600 mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700">Sitio Web</h4>
+                                    <a href="https://cuerpoymente.click/veri-product" target="_blank" class="text-blue-600 hover:underline">cuerpoymente.click/veri-product</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Map -->
+                    <div class="rounded-xl overflow-hidden h-96 md:h-full w-full">
+                       <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.820353086938!2d-75.727932!3d4.799723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3881c19d45a909%3A0x7d6c5b96719e728!2sCl.%2082%20%26%20Cra.%2039%2C%20Pereira%2C%20Risaralda%2C%20Colombia!5e0!3m2!1ses!2sus!4v1724965217462!5m2!1ses!2sus" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 MTM COMERCIO DIGITAL S A S. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Diseñado para la excelencia digital.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
